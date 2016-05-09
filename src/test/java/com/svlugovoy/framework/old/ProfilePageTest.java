@@ -1,4 +1,4 @@
-package com.svlugovoy.filesharing;
+package com.svlugovoy.framework.old;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

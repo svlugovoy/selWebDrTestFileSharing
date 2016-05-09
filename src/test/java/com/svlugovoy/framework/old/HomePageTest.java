@@ -1,13 +1,10 @@
-package com.svlugovoy.filesharing;
+package com.svlugovoy.framework.old;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;

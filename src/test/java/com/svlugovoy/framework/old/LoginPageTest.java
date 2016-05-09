@@ -1,4 +1,4 @@
-package com.svlugovoy.filesharing;
+package com.svlugovoy.framework.old;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Alert;
