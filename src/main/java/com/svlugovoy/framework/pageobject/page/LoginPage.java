@@ -38,7 +38,7 @@ public class LoginPage extends PageObject {
 
         if (!currentUrl.equals(newUrl) && !(driver.findElements(By.id(HomePage.ID_UPLOAD_BOX)) == null)) {
 
-                return new HomePage();
+            return new HomePage();
         }
 
         return new LoginPage();
@@ -68,5 +68,4 @@ public class LoginPage extends PageObject {
 
         return errorMessage.getText();
     }
-
 }

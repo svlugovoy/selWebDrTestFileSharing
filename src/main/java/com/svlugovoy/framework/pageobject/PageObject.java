@@ -49,4 +49,7 @@ public abstract class PageObject {
         return text;
     }
 
+    public void refreshPage(){
+        driver.navigate().refresh();
+    }
 }

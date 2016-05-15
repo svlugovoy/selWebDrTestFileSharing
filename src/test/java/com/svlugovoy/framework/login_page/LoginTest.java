@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest {
         loginPage = new LoginPage();
     }
 
-    //Successfull login
+    //Successful login
     @Test
     public void canLoginWithValidCredentials() {
         HomePage homePage = loginPage.loginAs(LOGIN, PASSWORD);
@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
         assertEquals(actualUsername, LOGIN);
     }
 
-    //Log in with invalid credentials
+    //Login with invalid credentials
     @Test
     public void canNotLoginWithIncorrectLogin() {
         PageObject page = loginPage.tryLoginAs(LOGIN, "incorrect pasword");
@@ -56,7 +56,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(errorMessage, UNABLE_TO_VERIFY_CREDENTIALS_ERROR_MESSAGE);
     }
 
-    //Log in with empty credentials
+    //Login with empty credentials
     @Test(dataProvider = "credentials")
     public void shouldAlertAppearsWithTextIfLogInWithEmptyCredentials(String login, String password, String message) {
         loginPage.login(login, password);

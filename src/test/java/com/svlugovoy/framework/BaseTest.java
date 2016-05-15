@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
 
-    HomePage homePage;
+    protected HomePage homePage;
 
     @BeforeClass
     public void beforeClass() {
